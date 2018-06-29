@@ -1,0 +1,183 @@
+@import url('base.css');
+body{
+    background: #F4F4F4;
+}
+header{
+    width: 100%;
+    height: auto;
+    background:url("../img/screen.png") no-repeat center bottom,url("../img/screen2.png") no-repeat center bottom,-webkit-linear-gradient(-90deg,#50ade8,#7ae0fa);
+    background-size: 100%;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+.airapi{
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.12);
+    height: 44px;
+    padding: 8px 12px;
+    position: absolute;
+    border-radius: 8px;
+    top: 1.6rem;
+    left: 0.4rem;
+    background: #ffbf62;
+    z-index: 2;
+    box-sizing: border-box;
+
+}
+.airapi p{
+    color: #ffffff;
+    font-size: 0.24rem;
+}
+.top{
+    width: 100%;
+    height: 0.9rem;
+}
+.city{
+    margin: 0 auto;
+    text-align: center;
+    line-height: 0.9rem;
+    font-size: 0.32rem;
+    font-weight: bold;
+    color: #fff;
+}
+.tem{
+    width: 100%;
+    height:auto;
+    margin: 2rem auto;
+}
+.tem p{
+    color: #fff;
+    line-height: 0.62rem;
+    font-size: 0.48rem;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+.tem p:first-child{
+    font-size: 1rem;
+    position: relative;
+}
+.tem p:first-child:after{
+    content: "\B0";
+    position: absolute;
+    text-align: left;
+    top: 0;
+}
+.todaytom{
+    width: 100%;
+    height: 1.4rem;
+    background: #fff;
+    position: relative;
+}
+.today{
+    float: left;
+    width: 50%;
+    height: auto;
+    padding: 0.2rem 0.24rem;
+    box-sizing: border-box;
+    background: #fff;
+}
+.today .top{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.today .top p{
+    font-size: 0.36rem;
+    color: #333;
+    margin-top: 0.1rem;
+}
+.today .bottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.today .bottom p{
+    display: inline-block;
+    font-size: 0.38rem;
+    color: #333;
+    margin-top: 0.1rem;
+}
+.today img{
+    width: 0.5rem;
+    height: 0.5rem;
+}
+.today:after{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height:1rem;
+    background-color: #f0f0f0;
+    left: 50%;
+    top: 0.2rem;
+}
+.holdday{
+     width: 100%;
+     height: auto;
+     background: #fff;
+     margin: 0.2rem auto;
+     overflow-x: auto;
+ }
+.holdday ul{
+    height: 100%;
+    display: flex;
+}
+.holdday ul li{
+    width: 1rem;
+    height: 100%;
+    flex-shrink: 0;
+}
+.holdday ul li .time{
+    font-size: 0.24rem;
+    color: #ccc;
+    text-align: center;
+    margin-top: 0.4rem;
+}
+.holdday ul li .wendu{
+    font-size: 0.30rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 0.4rem;
+}
+.holdday ul li img{
+    height: 0.5rem;
+    width: 0.5rem;
+    display: block;
+    margin: 0.15rem auto;
+}
+.holdday::-webkit-scrollbar{
+    height: 0;
+}
+.holdmonth{
+    width: 100%;
+    height: auto;
+    background: #fff;
+    overflow: hidden;
+    overflow-x: auto;
+}
+.holdmonth ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 0.5rem auto;
+}
+.holdmonth ul li{
+    width: 1.2rem;
+    height: 100%;
+    flex-shrink: 0;
+}
+.holdmonth ul li p{
+    font-size: 0.24rem;
+    color: #333;
+    text-align: center;
+    margin-top: 0.4rem;
+}
+.holdmonth ul li img{
+    height: 0.5rem;
+    width: 0.5rem;
+    display: block;
+    margin: 0.15rem auto;
+}
+.holdmonth::-webkit-scrollbar{
+    height: 0;
+}
