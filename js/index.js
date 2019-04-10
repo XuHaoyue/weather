@@ -1,19 +1,27 @@
 $(function() {
   let weather;
-  $.getScript("http://pv.sohu.com/cityjson?ie=utf-8", function() {
-    let num = returnCitySN.cname.indexOf("市");
-    let city = returnCitySN.cname.slice(0, num);
-
+  function myFun(result){
+    let num=result.name.indexOf('市')
+    let city
+    if(num>-1){
+      city = result.name.slice(0,num);
+    }else{
+      city = result.name
+    }
+    
     $.ajax({
       url: `https://www.toutiao.com/stream/widget/local_weather/data/?city=${city}`,
       dataType: "jsonp",
       success: function(obj) {
         weather = obj.data.weather;
-        console.log(weather);
         render();
       }
     });
-  });
+	}
+	var myCity = new BMap.LocalCity();
+	myCity.get(myFun);
+   
+
 
   function render() {
     //获取城市
